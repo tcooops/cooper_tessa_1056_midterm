@@ -9,7 +9,8 @@
 }
 
 .hero {
-	width: 100%;
+	height: 450px;
+	width: 1690px;
 	margin-left: 0 auto;
 	margin-right: 0 auto;
 	margin-top: 20px;
@@ -32,6 +33,7 @@ h2 {
 	font-size: 60px;
 	font-style: normal;
 	color: #333;
+	padding-left: 100px;
 }
 
 h3 {
@@ -40,6 +42,7 @@ h3 {
 	font-size: 40px;
 	font-style: normal;
 	color: #333;
+	padding-left: 100px;
 }
 
 h4 {
@@ -69,6 +72,17 @@ body, p {
 	margin-bottom: 30px;
 }
 
+#main-logo:hover {
+	height: 175px;
+	width: 175px;
+	opacity: 75%;
+
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
 .stacked {
   background-color: transparent;
   display: flex;
@@ -78,9 +92,42 @@ body, p {
   padding-top: 40px;
 }
 
+.social-nav {
+	width: 200px;
+	height: 50px;
+	margin-left: auto;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-evenly;
+  	margin-top: 30px;
+  	padding-right: 25px;
+}
+
 .social-nav img{
 	height: 30px;
 	width: 30px;
+}
+
+.social-nav img:hover {
+	opacity: 60%;
+	height: 40px;
+	width: 40px;
+	padding-bottom: 2px;
+	cursor: pointer;
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.selected {
+	color: #194a8a;
+	text-decoration: none;
+	list-style: none;
+	/*text-shadow: 3px 3px 15px #777;*/
+	font-size: 24px;
+	font-family: "aw-conqueror-inline", sans-serif;
 }
 
 .main-header {
@@ -95,19 +142,8 @@ body, p {
 	width: 100%; ***/
 }
 
-
-.social-nav {
-	width: 200px;
-	height: 50px;
-	margin-left: auto;
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: space-evenly;
-  	margin-top: 30px;
-  	padding-right: 25px;
-}
-
 .main-nav {
+	color: #da364f !important;
 	width: 480px;
 	height: 50px;
 	margin-bottom: 10px;
@@ -118,6 +154,26 @@ body, p {
 	flex-direction: row;
 	justify-content: space-evenly;
 	font-size: 18px;
+}
+
+a {
+	color: #da364f;
+	list-style: none;
+	text-decoration: none;
+
+}
+
+.main-nav a:hover {
+	color: #194a8a;
+	list-style: none;
+	text-decoration: none;
+	font-size: 20px;
+	cursor: pointer;
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 /*** Index ***/
@@ -151,11 +207,27 @@ body, p {
 
 }
 
-
 /*** START ABOUT ***/
 
+.about-body p {
+	font-size: 20px;
+	line-height: 26px;
+	margin-left: 800px;
+	margin-right: 200px;
+}
 
+.about-body p::first-letter {
+  font-size: 150%;
+  color: #da364f;
+  padding-left: 20px;
+}
 
+#footnote {
+	font-size: 12px !important;
+	line-height: 12px !important;
+	margin-left: 800px;
+	margin-right: 100px;
+}
 
 /*** START PRODUCTS ***/
 
