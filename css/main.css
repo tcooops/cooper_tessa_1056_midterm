@@ -39,7 +39,6 @@
   }
 }
 
-
 .header-text {
 	margin-left: 100px;
 	padding: 40px;
@@ -235,12 +234,19 @@ a {
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: row;
-	padding: 20px;
 }
 
 .main-items img {
-	height: 200px;
-	width: 200px;
+	padding: 20px;
+	height: 300px;
+	width: 300px;
+	-webkit-box-shadow: 5px 10px 18px #888888;  
+	-moz-box-shadow: 5px 10px 18px #888888;
+	box-shadow: 5px 10px 18px #888888;
+}
+
+.main-items li {
+
 }
 
 .featured-products {
@@ -265,6 +271,17 @@ a {
 .categories img {
 	height: 200px;
 	width: 200px;
+}
+
+#gallery {
+	padding: 20px;
+	margin-left: 65px;
+}
+
+#paragraph {
+	text-align: center;
+	font-size: 16px;
+
 }
 
 /*** START ABOUT ***/
@@ -374,8 +391,8 @@ input, textarea  {
   border-radius: 0px !important; 
   color: #fff !important;
   font-size: 20px;
-  background: #da364f;
-  border-color: #da364f !important;
+  background: #194a8a;
+  border-color: #194a8a !important;
   transition: all 0.6s ease 0s;
 }
 
