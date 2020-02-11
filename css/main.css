@@ -240,6 +240,47 @@ a {
 	margin: 30px;
 	display: flex;
 	justify-content: center;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-name: heading-animation;
+	animation-name: heading-animation;
+}
+
+@-webkit-keyframes heading-animation {
+  from,
+
+  50%,
+
+  to {
+    opacity: 1;
+  }
+
+  25%,
+
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes heading-animation {
+  from,
+
+  50%,
+
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  
+  75% {
+    opacity: 0;
+  }
+}
+
+.heading-animation {
+  -webkit-animation-name: heading-animation;
+  animation-name: heading-animation;
 }
 
 .main-items {
